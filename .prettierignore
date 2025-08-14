@@ -1,0 +1,27 @@
+# Instead of running prettier against every file extension it supports, we
+# explicitly list the files extensions we want to format
+*.*
+!.circleci
+!.github
+!*.ts
+!*.tsx
+!*.rb
+!*.jbuilder
+!*.js
+!*.jsx
+!*.md
+!*.yaml
+!*.yml
+!*.json
+
+# Force formatting of default ignores (notice the negation)
+!.prettierrc.js
+!.eslintrc.js
+!.syncpackrc.js
+
+# Third party deps
+**/node_modules/**
+/vendor/bundle
+
+# Generated files
+pnpm-lock.yaml
